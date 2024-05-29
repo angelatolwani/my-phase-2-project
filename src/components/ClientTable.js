@@ -31,7 +31,7 @@ export default function ClientTable( { clientsToDisplay }) {
         },
       }));
     
-    console.log(clientsToDisplay)
+    // console.log(clientsToDisplay)
     return (
         <TableContainer>
             <Table sx={{ minWidth: 650 }} aria-label="clien table">
