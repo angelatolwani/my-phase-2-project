@@ -129,32 +129,6 @@
       "clientPhone": "646-555-0321",
       "lastVisit": "2024-05-10",
       "history": "Bella received her first vaccinations and a wellness check."
-    },
-    {
-      "id": "ca7d",
-      "petName": "Buddy",
-      "petSpecies": "dog",
-      "petBreed": "yorkie",
-      "petAge": "20",
-      "petGender": "M",
-      "clientName": "Lauren",
-      "clientEmail": "lauren@gmail.com",
-      "clientPhone": "212-555-",
-      "lastVisit": "2024-05-29",
-      "history": "Routine checkup"
-    },
-    {
-      "id": "a3a6",
-      "petName": "Buddy",
-      "petSpecies": "dog",
-      "petBreed": "yorkie",
-      "petAge": "20",
-      "petGender": "M",
-      "clientName": "Lauren",
-      "clientEmail": "lauren@gmail.com",
-      "clientPhone": "212-555-",
-      "lastVisit": "2024-05-29",
-      "history": "Routine checkup"
     }
   ]
 }
