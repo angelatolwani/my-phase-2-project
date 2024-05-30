@@ -47,8 +47,6 @@ function ClientProfile () {
                 </CardActions>
             </Card>
         </>
-        //     <h4>Pet Name: {clientInfo.petName}</h4> */}
-
     )
 }
 
