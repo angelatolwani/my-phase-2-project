@@ -1,7 +1,6 @@
 import React from "react";
 import { LineChart } from "@mui/x-charts";
 import { Container } from "@mui/material";
-import { useEffect } from "react";
 
 function RevenueChart () {
     const dates = [];

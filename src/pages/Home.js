@@ -1,4 +1,4 @@
-import { Grid, Card, CardContent, Typography, CardMedia, Paper, Box } from "@mui/material";
+import { Grid, Typography, Paper, Box } from "@mui/material";
 
 function Home () {
     const imgUrl = "https://t3.ftcdn.net/jpg/06/38/69/12/240_F_638691287_sSY3HcDjVZ1tKNL971kT70T1YnrC3mvm.jpg"
