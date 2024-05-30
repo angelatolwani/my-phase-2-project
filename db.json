@@ -1,8 +1,8 @@
 {
   "clients": [
-    { 
-      "id": 1,
-      "petName": "Pistachio", 
+    {
+      "id": "1",
+      "petName": "Pistachio",
       "petSpecies": "dog",
       "petBreed": "chihuahua",
       "petAge": 4,
@@ -13,9 +13,9 @@
       "lastVisit": "2024-03-29",
       "history": "Pistachio had a routine check-up and received vaccinations."
     },
-    { 
-      "id": 2,
-      "petName": "Whiskers", 
+    {
+      "id": "2",
+      "petName": "Whiskers",
       "petSpecies": "cat",
       "petBreed": "siamese",
       "petAge": 3,
@@ -26,9 +26,9 @@
       "lastVisit": "2024-04-12",
       "history": "Whiskers was treated for a minor skin infection."
     },
-    { 
-      "id": 3,
-      "petName": "Buddy", 
+    {
+      "id": "3",
+      "petName": "Buddy",
       "petSpecies": "dog",
       "petBreed": "golden retriever",
       "petAge": 5,
@@ -39,9 +39,9 @@
       "lastVisit": "2024-01-15",
       "history": "Buddy underwent a dental cleaning and check-up."
     },
-    { 
-      "id": 4,
-      "petName": "Luna", 
+    {
+      "id": "4",
+      "petName": "Luna",
       "petSpecies": "cat",
       "petBreed": "persian",
       "petAge": 2,
@@ -52,9 +52,9 @@
       "lastVisit": "2024-05-05",
       "history": "Luna had a wellness exam and received booster shots."
     },
-    { 
-      "id": 5,
-      "petName": "Max", 
+    {
+      "id": "5",
+      "petName": "Max",
       "petSpecies": "dog",
       "petBreed": "beagle",
       "petAge": 6,
@@ -65,9 +65,9 @@
       "lastVisit": "2024-02-20",
       "history": "Max was seen for an ear infection and prescribed medication."
     },
-    { 
-      "id": 6,
-      "petName": "Mittens", 
+    {
+      "id": "6",
+      "petName": "Mittens",
       "petSpecies": "cat",
       "petBreed": "maine coon",
       "petAge": 4,
@@ -78,9 +78,9 @@
       "lastVisit": "2024-03-10",
       "history": "Mittens had a routine spaying surgery and recovered well."
     },
-    { 
-      "id": 7,
-      "petName": "Charlie", 
+    {
+      "id": "7",
+      "petName": "Charlie",
       "petSpecies": "dog",
       "petBreed": "poodle",
       "petAge": 3,
@@ -91,9 +91,9 @@
       "lastVisit": "2024-04-01",
       "history": "Charlie had a general check-up and received flea treatment."
     },
-    { 
-      "id": 8,
-      "petName": "Shadow", 
+    {
+      "id": "8",
+      "petName": "Shadow",
       "petSpecies": "cat",
       "petBreed": "british shorthair",
       "petAge": 2,
@@ -104,9 +104,9 @@
       "lastVisit": "2024-03-25",
       "history": "Shadow was treated for a minor respiratory infection."
     },
-    { 
-      "id": 9,
-      "petName": "Rocky", 
+    {
+      "id": "9",
+      "petName": "Rocky",
       "petSpecies": "dog",
       "petBreed": "boxer",
       "petAge": 7,
@@ -117,9 +117,9 @@
       "lastVisit": "2024-04-15",
       "history": "Rocky had surgery to remove a benign tumor and is recovering."
     },
-    { 
-      "id": 10,
-      "petName": "Bella", 
+    {
+      "id": "10",
+      "petName": "Bella",
       "petSpecies": "cat",
       "petBreed": "ragdoll",
       "petAge": 1,
@@ -129,6 +129,32 @@
       "clientPhone": "646-555-0321",
       "lastVisit": "2024-05-10",
       "history": "Bella received her first vaccinations and a wellness check."
+    },
+    {
+      "id": "ca7d",
+      "petName": "Buddy",
+      "petSpecies": "dog",
+      "petBreed": "yorkie",
+      "petAge": "20",
+      "petGender": "M",
+      "clientName": "Lauren",
+      "clientEmail": "lauren@gmail.com",
+      "clientPhone": "212-555-",
+      "lastVisit": "2024-05-29",
+      "history": "Routine checkup"
+    },
+    {
+      "id": "a3a6",
+      "petName": "Buddy",
+      "petSpecies": "dog",
+      "petBreed": "yorkie",
+      "petAge": "20",
+      "petGender": "M",
+      "clientName": "Lauren",
+      "clientEmail": "lauren@gmail.com",
+      "clientPhone": "212-555-",
+      "lastVisit": "2024-05-29",
+      "history": "Routine checkup"
     }
   ]
 }

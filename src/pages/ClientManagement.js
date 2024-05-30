@@ -36,7 +36,7 @@ function ClientManagement() {
                     <AddIcon />
                 </IconButton>
                 <ClientTable clientsToDisplay={clients} />
-                <NewClient open={open} handleClose={handleClose} />
+                <NewClient open={open} handleClose={handleClose} clients={clients} setClients={setClients} />
             </Container>
         </>
     )
