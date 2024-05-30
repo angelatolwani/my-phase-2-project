@@ -4,6 +4,7 @@ import Root from "./pages/Root";
 import ClientManagement from "./pages/ClientManagement";
 import MySchedule from "./pages/MySchedule";
 import Revenue from "./pages/Revenue";
+import ClientProfile from "./pages/ClientProfile";
 
 const routes = [
     {
@@ -29,6 +30,10 @@ const routes = [
             {
                 path: "revenue",
                 element: <Revenue />
+            },
+            {
+                path: "/client/:id",
+                element: <ClientProfile />
             }
         ]
     }

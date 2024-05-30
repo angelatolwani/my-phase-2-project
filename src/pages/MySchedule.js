@@ -1,7 +1,7 @@
 function MySchedule () {
     return (
         <>
-            <h1>My Schedule</h1>
+            <h1 align="center">My Schedule</h1>
         </>
     )
 }

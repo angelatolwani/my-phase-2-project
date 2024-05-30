@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Container, Typography, TextField, Button, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Grid, IconButton } from '@mui/material';
+import { Container, IconButton } from '@mui/material';
 import ClientTable from "../components/ClientTable";
 import AddIcon from '@mui/icons-material/Add';
-import { Link } from "react-router-dom";
 import NewClient from "../components/NewClient";
 
 function ClientManagement() {
@@ -13,23 +12,15 @@ function ClientManagement() {
         .then(resp => resp.json())
         .then(clientsInDb => setClients(clientsInDb))
     }, [])
-    // console.log(clients)
     
     // opens & closes the new client form
-    const handleOpen = () => {
-        setOpen(true);
-    };
-    const handleClose = () => {
-        setOpen(false);
-    };
+    const handleOpen = () => {setOpen(true)};
+    const handleClose = () => {setOpen(false)};
 
     return (
         <>
-            {/* <h1>Client Database</h1> */}
             <Container>
-                <Typography variant="h4" align="center" gutterBottom>
-                    Client Database
-                </Typography>
+                <h1 align="center">Client Database</h1>
                 {/* add a Search tool here */}
                 <IconButton color="primary" aria-label="add client" onClick={handleOpen}>
                     <AddIcon />

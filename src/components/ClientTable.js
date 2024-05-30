@@ -4,10 +4,9 @@ import TableBody from '@mui/material/TableBody';
 import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
-import Paper from '@mui/material/Paper';
 import { styled } from '@mui/material/styles';
 import TableCell, { tableCellClasses } from '@mui/material/TableCell';
-
+import { Link } from "react-router-dom";
 
 
 export default function ClientTable( { clientsToDisplay }) {
@@ -31,7 +30,6 @@ export default function ClientTable( { clientsToDisplay }) {
         },
       }));
     
-    // console.log(clientsToDisplay)
     return (
         <TableContainer>
             <Table sx={{ minWidth: 650 }} aria-label="clien table">
@@ -48,7 +46,7 @@ export default function ClientTable( { clientsToDisplay }) {
                     {clientsToDisplay.map(client => { 
                         return (
                             <StyledTableRow key={client.id} sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
-                                <TableCell>{client.petName}</TableCell>
+                                <TableCell component={Link} to={`/client/${client.id}`}>{client.petName}</TableCell>
                                 <TableCell align="center">{client.petSpecies}</TableCell>
                                 <TableCell align="center">{client.petBreed}</TableCell>
                                 <TableCell align="center">{client.clientName}</TableCell>

@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 
 function NavBar () {
-  // const [providerOptions, setProviderOptions] = useState(false);
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
 
@@ -15,9 +14,6 @@ function NavBar () {
   function handleClose(event) {
     setAnchorEl(null);
   };
-
-  console.log(anchorEl);
-  console.log(open);
 
   return (
     <>
@@ -30,7 +26,6 @@ function NavBar () {
           <Box>
             <Button color="inherit" component={Link} to="/">Home</Button>
             <Button color="inherit" component={Link} to="/about">About</Button>
-            {/* <Button color="inherit" component={Link} to="/providers">Providers</Button> */}
             <Button 
               id="provider-button"
               color="inherit" 

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Box, Button, TextField, Dialog, DialogActions, DialogContent, DialogTitle, Select, MenuItem, InputLabel } from '@mui/material';
+import { Box, Button, TextField, Dialog, DialogActions, DialogContent } from '@mui/material';
 
 
 
@@ -24,7 +24,6 @@ function NewClient ( {open, handleClose, clients, setClients} ) {
         })
     }
 
-    // console.log(newClientInfo)
     function handleFormSubmit(event) {
         event.preventDefault();
         console.log("submitted");
@@ -71,11 +70,6 @@ function NewClient ( {open, handleClose, clients, setClients} ) {
                         <TextField name="petBreed" label="Pet Breed" variant="filled" value={newClientInfo.petBreed} onChange={handleChange} />
                         <TextField name="petAge" label="Pet Age" variant="filled" value={newClientInfo.petAge} onChange={handleChange} />
                         <TextField name="petGender" label="Pet Gender" variant="filled" value={newClientInfo.petGender} onChange={handleChange} />
-                        {/* <InputLabel>Pet Gender</InputLabel> */}
-                        {/* <Select name="petGender" label="Pet Gender" placeholder="Pet Gender" variant="filled" value={newClientInfo.petGender} onChange={handleChange}>
-                            <MenuItem value={"F"}>Female</MenuItem>
-                            <MenuItem value={"M"}>Male</MenuItem>
-                        </Select> */}
                         <TextField name="clientName" label="Client Name" variant="filled" value={newClientInfo.clientName} onChange={handleChange} />
                         <TextField name="clientEmail" label="Email" variant="filled" value={newClientInfo.clientEmail} onChange={handleChange} />
                         <TextField name="clientPhone" label="Phone Number" variant="filled" placeholder="XXX-XXX-XXXX" value={newClientInfo.clientPhone} onChange={handleChange} />
