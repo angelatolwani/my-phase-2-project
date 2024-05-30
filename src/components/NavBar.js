@@ -1,14 +1,23 @@
-import { AppBar, IconButton, Toolbar, Typography, Box, Button } from "@mui/material";
+import { AppBar, IconButton, Toolbar, Typography, Box, Button, Menu, MenuItem } from "@mui/material";
 import PetsIcon from '@mui/icons-material/Pets';
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
 function NavBar () {
   // const [providerOptions, setProviderOptions] = useState(false);
+  const [anchorEl, setAnchorEl] = useState(null);
+  const open = Boolean(anchorEl);
 
-  // function handleProviderClick() {
-  //   setProviderOptions(!providerOptions)
-  // }
+  function handleClick(event) {
+    setAnchorEl(event.currentTarget);
+  };
+
+  function handleClose(event) {
+    setAnchorEl(null);
+  };
+
+  console.log(anchorEl);
+  console.log(open);
 
   return (
     <>
@@ -21,8 +30,31 @@ function NavBar () {
           <Box>
             <Button color="inherit" component={Link} to="/">Home</Button>
             <Button color="inherit" component={Link} to="/about">About</Button>
-            <Button color="inherit" component={Link} to="/providers">Providers</Button>
-            <Button color="inherit" component={Link} to="/patients">Patients</Button>
+            {/* <Button color="inherit" component={Link} to="/providers">Providers</Button> */}
+            <Button 
+              id="provider-button"
+              color="inherit" 
+              aria-controls={open ? 'basic-menu' : undefined}
+              aria-haspopup="true"
+              aria-expanded={open ? 'true' : undefined}
+              onClick={handleClick}
+            >
+              Providers
+            </Button>
+            <Menu
+              id="basic-menu"
+              anchorEl={anchorEl}
+              open={open}
+              onClose={handleClose}
+              MenuListProps={{
+                'aria-labelledby': 'provider-button',
+              }}
+            >
+              <MenuItem onClick={handleClose} component={Link} to="/clientmanagement">Client Management</MenuItem>
+              <MenuItem onClick={handleClose} component={Link} to="/myschedule">My Schedule</MenuItem>
+              <MenuItem onClick={handleClose} component={Link} to="/revenue">Revenue</MenuItem>
+            </Menu>
+            <Button color="inherit">Patients</Button>
           </Box>
         </Toolbar>
       </AppBar>

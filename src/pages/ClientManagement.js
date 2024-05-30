@@ -31,7 +31,6 @@ function ClientManagement() {
                     Client Database
                 </Typography>
                 {/* add a Search tool here */}
-                {/* <Button variant="contained">NewPatient</Button> */}
                 <IconButton color="primary" aria-label="add client" onClick={handleOpen}>
                     <AddIcon />
                 </IconButton>
