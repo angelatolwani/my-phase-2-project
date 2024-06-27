@@ -4,12 +4,12 @@ This is the framework for providers to be able to store & access  patient data. 
 
 ## Core Deliverables
 1. This is a single page application with 6 client-side routes, navigated to using React Router.
-    i. Home - Landing Page 
-    ii. About - Information about telehealth
-    iii. Client Management - Displays database of patients
-    iv. Client Profile - Displays more detailed patient information
-    v. Schedule
-    vi. Revenue
+    1. Home - Landing Page 
+    2. About - Information about telehealth
+    3.  Client Management - Displays database of patients
+    4. Client Profile - Displays more detailed patient information
+    5. Schedule
+    6. Revenue
 2. The app uses React components to streamline functionality and enable reusability. 
     i. NavBar
     ii. Client Table
