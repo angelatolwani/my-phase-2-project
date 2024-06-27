@@ -11,15 +11,15 @@ This is the framework for providers to be able to store & access  patient data. 
     5. Schedule
     6. Revenue
 2. The app uses React components to streamline functionality and enable reusability. 
-    i. NavBar
-    ii. Client Table
-    iii. New Client Form
-    iv. Calendar
-    v. Revenue Chart
+    1. NavBar
+    2. Client Table
+    3. New Client Form
+    4. Calendar
+    5. Revenue Chart
 3. Json-server was used to create a RESTful API to access and store patient information.
-    i. When submitting a new client form, useState was used to handle form submission and POST to json.
-    ii. GET requests used to display client database.
-    iii. useParams used to display detailed client profile information with GET request.
+    1. When submitting a new client form, useState was used to handle form submission and POST to json.
+    2. GET requests used to display client database.
+    3. useParams used to display detailed client profile information with GET request.
 
 ## Future Directions
 1. Build out calendar and revenue pages. 
