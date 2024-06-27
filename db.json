@@ -129,6 +129,19 @@
       "clientPhone": "646-555-0321",
       "lastVisit": "2024-05-10",
       "history": "Bella received her first vaccinations and a wellness check."
+    },
+    {
+      "id": "87cd",
+      "petName": "Amara",
+      "petSpecies": "cat",
+      "petBreed": "Maine coon",
+      "petAge": "3",
+      "petGender": "F",
+      "clientName": "Zak",
+      "clientEmail": "zak@gmail.com",
+      "clientPhone": "646-555-9876",
+      "lastVisit": "2024-05-30",
+      "history": "routine checkup"
     }
   ]
 }
